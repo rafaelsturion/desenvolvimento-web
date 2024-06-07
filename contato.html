@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contato.html">Fale Conosco</a>
@@ -31,68 +31,37 @@
         </div>
     </nav>
 
-    <div class="container mt-3">
-        <div class="alert alert-primary" role="alert">
-            Um simples alerta primary. Olha só!
-        </div>
-
-        <div class="row mb-5"> <!-- inicio row cards-->
-            <div class="col-md-4 col-sm-12">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Título do card</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
-                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                      <a href="#" class="card-link">Link do card</a>
-                      <a href="#" class="card-link">Outro link</a>
-                    </div>
-                  </div>  
+    <div class="container mt-3 mb-3">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Endereço de email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="txtemail">
+              <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
             </div>
 
-            <div class="col-md-4 col-sm-12">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Título do card</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
-                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                      <a href="#" class="card-link">Link do card</a>
-                      <a href="#" class="card-link">Outro link</a>
-                    </div>
-                </div> <!-- fim card -->
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="txtsenha">
             </div>
 
-            <div class="col-md-4 col-sm-12">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Título do card</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
-                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                      <a href="#" class="card-link">Link do card</a>
-                      <a href="#" class="card-link">Outro link</a>
-                    </div>
-                </div> <!-- fim card -->
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Lembrar minha senha</label>
             </div>
-        </div> <!-- fim row cards -->
-
-        <div class="row"> <!-- inicio row video e maps-->
-            <div class="col-md-8 col-sm-12">
-                <div class="card">
-                    <div class="card-body"> 
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/6LX7dCDOrOY?si=Hp2dAXVYEY_M3pd3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div> <!-- fim col Youtube -->
-
-            <div class="col-md-4 col-sm-12">
-                <div class="card">
-                    <div class="card-body"> 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3239.8999852204715!2d139.55515677529925!3d35.704078728719416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDQyJzE0LjciTiAxMznCsDMzJzI3LjgiRQ!5e0!3m2!1spt-BR!2sbr!4v1716983308214!5m2!1spt-BR!2sbr" width="100%" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div> <!-- fim col Maps -->
-
             
-        </div> <!-- fim row Youtube e Maps -->
+            <div class="form-group">
+                <label for="sel_uf">UF</label>
+                <select class="form-control" id="sel_uf"  name="sel_uf">
+                    <option disabled selected>Escolha um estado</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">Minas Gerais</option>
+                    <option value="SP">Espirito Santo</option>
+                </select>
+              </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <a href="index.html" title="voltar" class="btn btn-outline-success">Voltar</a>
+          </form>
 
     </div> <!-- fim container -->
 
